@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIIT - Sistema Integral de Información</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-logo-left">
+            <div class="logo-sep">SEP</div>
+            <div>
+                <span class="educacion">EDUCACIÓN</span>
+                <span class="sep-sub">SECRETARÍA DE EDUCACIÓN PÚBLICA</span>
+            </div>
+        </div>
+        <div class="header-center">
+            <span class="sii-title">Sistema Integral de Información</span><br>
+            <span class="instituto">Instituto Tecnológico de Durango</span>
+        </div>
+        <div class="header-logo-right">
+            <div class="logo-tecnm">TecNM</div>
+            <div class="logo-text-right">TECNOLÓGICO<br>NACIONAL DE MÉXICO</div>
+        </div>
+    </div>
+
+    <!-- Landing Body -->
+    <div class="landing-body">
+        <!-- Personal del Instituto -->
+        <div class="link-personal">
+            <a href="#" class="landing-link" onclick="return false;">
+                <span class="globe-icon"></span>
+                <span class="link-text">Personal del Instituto</span>
+            </a>
+        </div>
+
+        <!-- Alumnos -->
+        <div class="link-alumnos">
+            <a href="#" class="landing-link" id="link-alumnos">
+                <span class="globe-icon"></span>
+                <span class="link-text">Alumnos</span>
+            </a>
+        </div>
+
+        <!-- Aspirantes -->
+        <div class="link-aspirantes">
+            <a href="#" class="landing-link" onclick="return false;">
+                <span class="globe-icon"></span>
+                <span class="link-text">Aspirantes</span>
+            </a>
+        </div>
+
+        <!-- Login Form (hidden by default) -->
+        <div class="login-container" id="login-container">
+            <div class="login-title">Autentificación para acceso al sistema</div>
+            <div class="login-subtitle">Introduce los datos correspondientes:</div>
+            <form id="login-form">
+                <table class="login-table">
+                    <tr>
+                        <td class="lbl">No. de Control:</td>
+                        <td><input type="text" name="control" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                        <td class="lbl">NIP:</td>
+                        <td><input type="password" name="nip" autocomplete="off"></td>
+                    </tr>
+                </table>
+                <button type="submit" class="btn-acceso">Acceso</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

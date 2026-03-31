@@ -1,0 +1,711 @@
+/* ===== SIIT Portal Replica - Shared Styles ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background: #E8E8E8;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: #000;
+}
+
+/* ===== HEADER ===== */
+.header {
+    background: #5B0000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    min-height: 70px;
+    position: relative;
+}
+
+.header-logo-left {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-logo-right {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-center {
+    text-align: center;
+}
+
+.header .educacion {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.header .sep-sub {
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.85);
+    display: block;
+}
+
+.header .sii-title {
+    font-variant: small-caps;
+    font-size: 17px;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.header .instituto {
+    font-variant: small-caps;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.header .portal {
+    font-variant: small-caps;
+    font-size: 13px;
+    color: rgba(255,255,255,0.9);
+}
+
+/* Logo placeholders */
+.logo-sep {
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    color: rgba(255,255,255,0.7);
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.logo-tecnm {
+    width: 45px;
+    height: 50px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    color: rgba(255,255,255,0.7);
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.logo-text-right {
+    font-size: 10px;
+    color: #fff;
+    text-align: left;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+/* ===== NAV BAR ===== */
+.nav {
+    background: #E0E0E0;
+    border-bottom: 2px solid #999;
+    border-top: 1px solid #BBB;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.nav a {
+    color: #000;
+    text-decoration: underline;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.nav a:hover {
+    color: #5B0000;
+}
+
+.nav-sep {
+    color: #666;
+    margin: 0 6px;
+    font-weight: bold;
+}
+
+/* ===== LANDING PAGE ===== */
+.landing-body {
+    min-height: calc(100vh - 78px);
+    padding: 40px 20px;
+}
+
+.landing-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.landing-link:hover .link-text { text-decoration: underline; }
+
+.link-text {
+    color: #CC6600;
+    font-size: 20px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.link-personal { margin-left: 22%; margin-top: 30px; }
+.link-alumnos { margin-left: 40%; margin-top: 50px; }
+.link-aspirantes { margin-left: 60%; margin-top: 50px; }
+
+/* Globe icon */
+.globe-icon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #888;
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(ellipse at center, #DDD 0%, #BBB 100%);
+}
+.globe-icon::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #888;
+}
+.globe-icon::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    border-left: 1px solid #888;
+}
+
+/* ===== LOGIN FORM ===== */
+.login-container {
+    display: none;
+    width: 460px;
+    margin: 30px auto 0;
+    border: 1px solid #999;
+    background: #F0F0F0;
+}
+
+.login-container.active { display: block; }
+
+.login-title {
+    background: #5B0000;
+    color: #fff;
+    padding: 5px 10px;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+.login-subtitle {
+    background: #CCC;
+    padding: 4px;
+    text-align: center;
+    font-size: 13px;
+    border-bottom: 1px solid #999;
+}
+
+.login-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.login-table td {
+    padding: 4px 8px;
+    border: 1px solid #999;
+}
+
+.login-table .lbl {
+    background: #5B0000;
+    color: #fff;
+    font-weight: bold;
+    font-variant: small-caps;
+    width: 160px;
+    font-size: 13px;
+}
+
+.login-table input {
+    width: 100%;
+    padding: 3px 4px;
+    border: 1px solid #AAA;
+    font-family: 'Times New Roman', serif;
+    font-size: 14px;
+}
+
+.btn-acceso {
+    display: block;
+    margin: 10px auto;
+    padding: 4px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px outset #ccc;
+    background: #E0E0E0;
+    font-family: 'Times New Roman', serif;
+    font-size: 14px;
+}
+
+.btn-acceso:active { border-style: inset; }
+
+/* ===== CONTENT ===== */
+.content {
+    padding: 15px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.content-wide {
+    padding: 10px 15px;
+}
+
+/* ===== STUDENT INFO TABLE ===== */
+.student-info {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 8px;
+}
+
+.student-info th {
+    background: #800000;
+    color: #fff;
+    padding: 3px 8px;
+    border: 1px solid #555;
+    font-variant: small-caps;
+    font-size: 12px;
+    text-align: center;
+}
+
+.student-info td {
+    background: #F0F0F0;
+    padding: 3px 8px;
+    border: 1px solid #999;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* ===== DATA TABLE ===== */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0;
+}
+
+.data-table th {
+    background: #800000;
+    color: #fff;
+    padding: 3px 6px;
+    border: 1px solid #555;
+    font-variant: small-caps;
+    font-size: 12px;
+    text-align: center;
+}
+
+.data-table td {
+    padding: 2px 6px;
+    border: 1px solid #999;
+    font-size: 12px;
+    background: #F5F5F5;
+}
+
+.data-table .period-header {
+    background: #CCC;
+    font-weight: bold;
+    text-align: center;
+    font-size: 13px;
+    border: 1px solid #999;
+}
+
+.data-table .subtotal td {
+    background: #E0E0E0;
+    font-weight: bold;
+    text-align: right;
+}
+
+/* ===== EVALUACIONES SUBHEADER ===== */
+.eval-subheader {
+    background: #F0F0F0;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 2px solid #999;
+}
+
+.eval-subheader .edu-large {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #000;
+}
+
+.eval-subheader .edu-sub {
+    font-size: 9px;
+    color: #333;
+    display: block;
+}
+
+.eval-subheader .inst-text {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.eval-logo {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #999;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    color: #666;
+    flex-shrink: 0;
+}
+
+/* ===== SUMMARY BOXES ===== */
+.summary-row {
+    display: flex;
+    justify-content: center;
+    margin: 8px 0;
+    gap: 30px;
+}
+
+.summary-box {
+    display: flex;
+    border: 1px solid #666;
+}
+
+.summary-label {
+    background: #800000;
+    color: #fff;
+    padding: 4px 10px;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.summary-value {
+    background: #DDD;
+    padding: 4px 15px;
+    font-weight: bold;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+/* ===== CURRICULUM GRID ===== */
+.curriculum-grid {
+    border-collapse: collapse;
+    margin: 8px auto;
+    font-size: 9px;
+}
+
+.curriculum-grid th {
+    background: #800000;
+    color: #fff;
+    padding: 4px 2px;
+    border: 1px solid #333;
+    font-size: 10px;
+    text-align: center;
+    font-variant: small-caps;
+    min-width: 105px;
+    font-weight: bold;
+}
+
+.curriculum-grid td {
+    border: 1px solid #444;
+    padding: 2px 3px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 8.5px;
+    width: 105px;
+    height: 50px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.curriculum-grid td.empty-cell {
+    background: #E8E8E8;
+    border: 1px solid #E8E8E8;
+}
+
+.cell-acreditado { background: #006600; color: #fff; }
+.cell-cursando { background: #800000; color: #fff; }
+.cell-sin-acreditar { background: #CCCC00; color: #000; }
+.cell-especial { background: #000099; color: #fff; }
+.cell-cur-rep { background: #996633; color: #fff; }
+.cell-a-examen { background: #0066CC; color: #fff; }
+.cell-ex-rep { background: #CC6699; color: #fff; }
+.cell-positiva { background: #999999; color: #fff; }
+.cell-no-permitida { background: #CC99CC; color: #000; }
+
+/* Legend */
+.legend {
+    margin: 12px auto;
+    text-align: center;
+}
+
+.legend h3 {
+    font-variant: small-caps;
+    color: #800000;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.legend-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.legend-table td {
+    padding: 4px 8px;
+    border: 2px solid #333;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    min-width: 90px;
+}
+
+/* ===== WELCOME / DASHBOARD ===== */
+.welcome-title {
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 12px 0 5px;
+}
+
+.welcome-info {
+    text-align: center;
+    font-size: 14px;
+    margin: 3px 0;
+    font-weight: bold;
+}
+
+.attention {
+    color: #CC0000;
+    font-weight: bold;
+    text-align: center;
+    margin: 8px 20px;
+    font-size: 13px;
+}
+
+.attention span { text-decoration: underline; }
+
+.suggestion {
+    color: #008000;
+    font-weight: bold;
+    text-align: center;
+    margin: 8px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.complaint-info {
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 4px 20px;
+    text-transform: uppercase;
+}
+
+/* ===== TITLES ===== */
+.page-title {
+    text-align: center;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.page-subtitle {
+    text-align: center;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 16px;
+    color: #800000;
+    margin: 8px 0;
+}
+
+/* ===== INSCRIPCIONES FORM ===== */
+.form-section {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-section h2 {
+    font-variant: small-caps;
+    text-align: center;
+    margin: 12px 0;
+    font-size: 16px;
+}
+
+.form-section h3 {
+    font-variant: small-caps;
+    text-align: center;
+    margin: 8px 0;
+    color: #800000;
+    font-size: 14px;
+}
+
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0;
+}
+
+.form-table th {
+    background: #800000;
+    color: #fff;
+    padding: 3px 8px;
+    border: 1px solid #555;
+    font-variant: small-caps;
+    font-size: 12px;
+}
+
+.form-table td {
+    padding: 3px 8px;
+    border: 1px solid #999;
+    font-size: 12px;
+    background: #F5F5F5;
+    text-align: center;
+}
+
+.form-actions {
+    text-align: center;
+    margin: 12px 0;
+}
+
+.form-actions a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #000;
+    font-size: 14px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* ===== CALIFICACIONES INFO ===== */
+.cal-header {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.cal-header h2 {
+    font-variant: small-caps;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.cal-header p {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 2px 0;
+}
+
+/* ===== SCHEDULE TABLE ===== */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+}
+
+.schedule-table th {
+    background: #800000;
+    color: #fff;
+    padding: 3px 4px;
+    border: 1px solid #555;
+    font-variant: small-caps;
+    font-size: 11px;
+}
+
+.schedule-table td {
+    padding: 2px 4px;
+    border: 1px solid #999;
+    font-size: 10px;
+    background: #F5F5F5;
+    text-align: center;
+    vertical-align: top;
+}
+
+.schedule-table .materia-cell {
+    text-align: left;
+    font-weight: bold;
+    background: #EAEAEA;
+    font-size: 10px;
+}
+
+.schedule-table .total-row td {
+    font-weight: bold;
+    background: #DDD;
+    font-size: 12px;
+}
+
+/* ===== MISC ===== */
+.disclaimer {
+    text-align: center;
+    color: #CC0000;
+    font-size: 11px;
+    font-style: italic;
+    margin: 12px 0;
+}
+
+.btn {
+    padding: 3px 18px;
+    border: 2px outset #ccc;
+    background: #E0E0E0;
+    cursor: pointer;
+    font-family: 'Times New Roman', serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.btn:active { border-style: inset; }
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+hr.maroon {
+    border: none;
+    border-top: 2px solid #800000;
+    margin: 8px 0;
+}
+
+select {
+    font-family: 'Times New Roman', serif;
+    font-size: 13px;
+    padding: 2px;
+}
+
+input[type="text"] {
+    font-family: 'Times New Roman', serif;
+    font-size: 13px;
+    padding: 2px 4px;
+    border: 1px solid #AAA;
+}
